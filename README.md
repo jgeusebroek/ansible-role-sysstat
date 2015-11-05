@@ -21,8 +21,6 @@ Example Playbook
 Example Variables
 ----------------
 
-	These variables are available (values are default)
-
 	# How long to keep log files (in days).
 	# Used by sa2(8) script
 	# If value is greater than 28, then log files are kept in
