@@ -1,15 +1,16 @@
-Ansible role sysstat
-=========
+# Ansible role: sysstat
 
-Install and configure the sysstat performance monitoring tools
+An Ansible Role that installs and configures the sysstat performance monitoring tools RedHat/CentOS or Debian/Ubuntu.
 
-Requirements
-------------
+## Requirements
 
 None
 
-Example Playbook
-----------------
+## Depenencies
+
+None
+
+## Example Playbook
 
     ---
     - hosts: all
@@ -18,8 +19,7 @@ Example Playbook
       roles:
          - { role: jgeusebroek.sysstat, tags: ["sysstat"] }
 
-Example Variables
-----------------
+## Example Variables
 
 	# How long to keep log files (in days).
 	# Used by sa2(8) script
@@ -39,13 +39,10 @@ Example Variables
 	# Compression program to use.
 	sysstat_compression_program: 'bzip2'
 
-License
--------
+## License
 
-BSD
+MIT / BSD
 
-Author Information
-------------------
+## Author Information
 
-Jeroen Geusebroek
-me@jeroengeusebroek.nl
+This role was created in 2015 by [Jeroen Geusebroek](http://jeroengeusebroek.nl/).
