@@ -1,0 +1,8 @@
+---
+sysstat_package: "sysstat"
+sysstat_binary_path: "/usr/lib/sysstat"
+sysstat_config: "/etc/sysstat/sysstat"
+sysstat_logdir: '/var/log/sysstat'
+
+# we need to reload after placing the template
+sysstat_cron_service: 'cron'

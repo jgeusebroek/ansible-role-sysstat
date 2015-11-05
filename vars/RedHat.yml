@@ -1,0 +1,8 @@
+---
+sysstat_package: "sysstat"
+sysstat_binary_path: "/usr/lib64/sa"
+sysstat_config: "/etc/sysconfig/sysstat"
+sysstat_logdir: '/var/log/sa'
+
+# we need to reload after placing the template
+sysstat_cron_service: 'crond'

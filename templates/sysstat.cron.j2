@@ -1,0 +1,10 @@
+# {{ ansible_managed }}
+
+PATH={{ sysstat_binary_path }}:/usr/sbin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Activity reports every minute everyday
+*/1 * * * * root {{ sysstat_binary_path }}/sa1 1 1
+
+# Generate a daily summary of process accounting at 23:59
+53 23 * * * root {{ sysstat_binary_path }}/sa2 -A
+
