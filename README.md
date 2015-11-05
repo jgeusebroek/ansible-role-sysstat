@@ -6,7 +6,7 @@ An Ansible Role that installs and configures the sysstat performance monitoring 
 
 None
 
-## Depenencies
+## Dependencies
 
 None
 
