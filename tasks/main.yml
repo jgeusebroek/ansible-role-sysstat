@@ -8,7 +8,7 @@
     state: present
   when: ansible_os_family == 'Debian'
 
-- name: Install sysstat package | Rhel
+- name: Install sysstat package | RedHat
   yum:
     name: '{{ sysstat_package }}'
     state: present
