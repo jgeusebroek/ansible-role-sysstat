@@ -2,6 +2,12 @@
 - name: Include OS-specific variables.
   include_vars: "{{ ansible_os_family }}.yml"
 
+- name: Update apt cache | Debian
+  apt:
+    update_cache: yes
+    cache_valid_time: 86400
+  when: ansible_os_family == 'Debian'
+
 - name: Install sysstat package | Debian
   apt:
     name: '{{ sysstat_package }}'
