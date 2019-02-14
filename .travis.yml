@@ -1,0 +1,35 @@
+---
+dist: xenial
+language: python
+services: docker
+
+env:
+  matrix:
+    - MOLECULE_DISTRO: ubuntu1604
+    - MOLECULE_DISTRO: ubuntu1804
+    - MOLECULE_DISTRO: debian8
+    - MOLECULE_DISTRO: debian9
+    - MOLECULE_DISTRO: centos7
+
+# Cache Ansible and Molecule to speed things up
+cache:
+  - pip
+
+install:
+  # Install Ansible, Molecule and docker-py
+  - pip install ansible molecule docker
+
+  # Log Docker, Ansible and Molecule version
+  - docker --version
+  - ansible --version
+  - molecule --version
+
+before_script:
+  - cd .. && mv ansible-role-sysstat jgeusebroek.sysstat && cd jgeusebroek.sysstat
+
+script:
+  # Start test
+  - molecule test
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/

@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/jgeusebroek/ansible-role-sysstat.svg?branch=master)](https://travis-ci.org/jgeusebroek/ansible-role-sysstat
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-sysstat-blue.svg)](https://galaxy.ansible.com/jgeusebroek/sysstat)
+
 # Ansible role: sysstat
 
 An Ansible Role that installs and configures the sysstat performance monitoring tools RedHat/CentOS or Debian/Ubuntu.
@@ -45,4 +48,4 @@ MIT / BSD
 
 ## Author Information
 
-This role was created in 2015 by [Jeroen Geusebroek](http://jeroengeusebroek.nl/).
+This role was created in 2015 by [Jeroen Geusebroek](https://jeroengeusebroek.nl/).
