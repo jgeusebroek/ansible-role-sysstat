@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jgeusebroek/ansible-role-sysstat.svg?branch=master)](https://travis-ci.org/jgeusebroek/ansible-role-sysstat
+[![Build Status](https://travis-ci.org/jgeusebroek/ansible-role-sysstat.svg?branch=master)](https://travis-ci.org/jgeusebroek/ansible-role-sysstat)
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-sysstat-blue.svg)](https://galaxy.ansible.com/jgeusebroek/sysstat)
 
 # Ansible role: sysstat
